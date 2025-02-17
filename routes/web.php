@@ -70,4 +70,10 @@ Route::resource('photos', PhotoController::class)->except([
 ]);
 
 
+//prak 5 
+Route::get('/greeting', function () {
+	return view('hello', ['name' => 'Siska']);
+});
+
+
  
