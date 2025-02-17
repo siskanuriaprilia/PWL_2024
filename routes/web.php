@@ -67,4 +67,5 @@ Route::get('/user/{name?}', function ($name='John') {
 Route::resource('photos', PhotoController::class);
 
 
+
  
