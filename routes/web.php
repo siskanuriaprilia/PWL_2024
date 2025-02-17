@@ -65,9 +65,9 @@ Route::get('/user/{name?}', function ($name='John') {
 
 //prak 4
 
-
-Route::resource('photos', PhotoController::class)->only([
-    'index', 'show'
+Route::resource('photos', PhotoController::class)->except([
+    'create', 'store', 'update', 'destroy'
 ]);
+
 
  
